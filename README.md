@@ -3,7 +3,8 @@ ae comps to graphviz
 
 Export flow of current comp to [graphviz](http://graphviz.org/)  
 
-![](comp.png) 
+![](comp.png)  
+Image created with [Omnigraffle](http://www.omnigroup.com/omnigraffle/)  
 
     digraph {
         "Comp 1" -> "Comp 2";
@@ -23,8 +24,9 @@ install graphviz with homebrew
 
 export image:  
 
-      dot -Tpng comp.dot -o comp.png; open out.png
+      dot -Tpng comp.dot -o raw-comp.png; open raw-comp.png
 
+![](raw-graphviz-output.png)  
 
 
 ##Todo:  
