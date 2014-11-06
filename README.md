@@ -2,7 +2,7 @@ ae comps to graphviz
 ====================
 
 Export flow of current comp to graphviz  
-![](comps.png) 
+![](comp.png) 
 
 WIP
 
