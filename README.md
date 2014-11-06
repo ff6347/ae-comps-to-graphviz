@@ -18,7 +18,7 @@ Image created with [Omnigraffle](http://www.omnigroup.com/omnigraffle/)
         "Comp 1" -> "Comp 3";
     }
 
-install graphviz with homebrew
+####install graphviz with homebrew
 
     brew install graphviz  
 
@@ -26,9 +26,13 @@ export image:
 
       dot -Tpng comp.dot -o raw-comp.png; open raw-comp.png
 
+####Graphviz export  
+
 ![](raw-graphviz-output.png)  
 
-
+####comps only export  
+…   
+![](comps-only.png)  
 ##Todo:  
 
 - fix recursion (not working correctly, double entries in array)
