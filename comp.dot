@@ -1,0 +1,11 @@
+digraph {
+"Comp 1" -> "Comp 2";
+"Comp 2" -> "Black Solid 3 Comp 1";
+"Black Solid 3 Comp 1" -> "Black Solid 3";
+"Comp 2" -> "Black Solid 2";
+"Comp 2" -> "Black Solid 1";
+"Comp 2" -> "Comp 3";
+"Comp 3" -> "Null 1";
+"Comp 1" -> "Black Solid 3 Comp 1";
+"Comp 1" -> "Comp 3";
+}
