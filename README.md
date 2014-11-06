@@ -1,10 +1,38 @@
 ae comps to graphviz
 ====================
 
-Export flow of current comp to graphviz  
+Export flow of current comp to [graphviz](http://graphviz.org/)  
+
 ![](comp.png) 
 
-WIP
+    digraph {
+        "Comp 1" -> "Comp 2";
+        "Comp 2" -> "Black Solid 3 Comp 1";
+        "Black Solid 3 Comp 1" -> "Black Solid 3";
+        "Comp 2" -> "Black Solid 2";
+        "Comp 2" -> "Black Solid 1";
+        "Comp 2" -> "Comp 3";
+        "Comp 3" -> "Null 1";
+        "Comp 1" -> "Black Solid 3 Comp 1";
+        "Comp 1" -> "Comp 3";
+    }
+
+install graphviz with homebrew
+
+    brew install graphviz  
+
+export image:  
+
+      dot -Tpng comp.dot -o comp.png; open out.png
+
+
+
+##Todo:  
+
+- fix recursion (not working correctly, double entries in array)
+- add label if comp, layer, camera, light, text or or or
+- exclude layer option
+- ...
 
 Copyright 2014 Fabian "fabiantheblind" Morón Zirfas
 
